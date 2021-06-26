@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msgbox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fcf5ef"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/add_message"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/head"
+        android:layout_centerHorizontal="true"
+        android:gravity="start"
+        android:maxLines="5"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_message"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#81D4FA"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:fontFamily="@font/baloo_da"
+        android:text="Service Details:" />
+</RelativeLayout>

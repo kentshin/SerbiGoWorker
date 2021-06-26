@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FCF5EF"
+    android:fadingEdge="horizontal|vertical"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="#fcf5ef"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/Header_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/baloo_da"
+            android:text="Do you wan to report this Client?"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/report_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Header_Text"
+            android:layout_marginTop="10dp"
+            android:background="#FDF7BE"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:hint="State the reason for reporting"
+            android:lines="4"
+            android:padding="5dp"
+            android:textColor="#633333"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:id="@+id/button_holder"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/report_reason"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:divider="@drawable/divider"
+            android:dividerPadding="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:showDividers="middle"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="#80DEEA"
+                android:fontFamily="sans-serif-medium"
+                android:text="Report"
+                android:textColor="#FDFDFD"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="#FF8A65"
+                android:fontFamily="sans-serif-medium"
+                android:text="Cancel"
+                android:textColor="#F8F7F7"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

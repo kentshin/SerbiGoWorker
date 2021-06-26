@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SerbiGo Provider</string>
+
+    <string-array name="service_list">
+        <item>SELECT SERVICE</item>
+        <item>Plumbing Service</item>
+        <item>Carpentry Service</item>
+        <item>Home Paint Service</item>
+        <item>Laundry Service</item>
+        <item>Nail Cleaning</item>
+        <item>Electrical Service</item>
+        <item>TV Repair</item>
+        <item>Refrigerator Repair</item>
+        <item>Washing Machine Repair</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="filter">Filter</string>
+
+
+</resources>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".worker_profile">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#F0AE4F"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/last"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imageView5"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/client_photo"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/last"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-2dp"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@id/contact"
+            android:drawableLeft="@drawable/phone" />
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@id/textView7"
+            android:layout_marginStart="10dp"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:isIndicator="true"
+            android:progressTint="#DA9837"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:transformPivotX="5dp"
+            android:transformPivotY="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/work" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/person" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/home" />
+
+        <TextView
+            android:id="@+id/total_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView10"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-black"
+            android:text="total" />
+
+        <TextView
+            android:id="@+id/total_service2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView10"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/total_service"
+            android:text="Total Services Made" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Service Provider Since:" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/textView10"
+            android:text="Registered Date" />
+
+        <TextView
+            android:id="@+id/service_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/textView3"
+            android:text="Name of Service" />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:text="contact number" />
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/textView3"
+            android:text="Provider Name" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/textView3"
+            android:text="Full Address" />
+
+
+        <LinearLayout
+            android:id="@+id/switch_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <Switch
+                android:id="@+id/on_off_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/text_availability"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="#00FAFAFA"
+                android:backgroundTint="#00F9FAF9"
+                android:clickable="false"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/first_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="35dp"
+        android:padding="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/filter_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/card1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/Select1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date from:" />
+
+                <EditText
+                    android:id="@+id/from_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Select1"
+                    android:clickable="false"
+                    android:ems="5"
+                    android:enabled="false"
+                    android:hint="Select Date"
+                    android:inputType="textPersonName"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:id="@+id/date_from"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/Select1"
+                    android:layout_marginStart="2dp"
+                    android:layout_toRightOf="@id/from_date"
+                    android:background="@drawable/circle_button"
+                    android:gravity="start"
+                    android:text="+"
+                    android:textColor="#4B2828"
+                    app:iconPadding="8dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/card2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/card1"
+                android:clickable="true">
+
+                <ImageButton
+                    android:id="@+id/date_to"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/Select2"
+                    android:layout_marginStart="2dp"
+                    android:layout_toRightOf="@id/to_date"
+                    android:background="@drawable/circle_button"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="#4B2828"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Select2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date to:" />
+
+                <EditText
+                    android:id="@+id/to_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Select2"
+                    android:layout_marginTop="0dp"
+                    android:clickable="false"
+                    android:ems="5"
+                    android:enabled="false"
+                    android:hint="Select Date"
+                    android:inputType="textPersonName"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/filter"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="#80DEEA"
+                android:text="Filter"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filter_holder"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Total Services Made: " />
+
+        <TextView
+            android:id="@+id/total_services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filter_holder"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView5"
+            android:text="00" />
+
+        <TextView
+            android:id="@+id/total_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_services"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView5"
+            android:inputType="number"
+            android:text="00" />
+
+        <TextView
+            android:id="@+id/commission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView4"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView5"
+            android:text="00" />
+
+        <TextView
+            android:id="@+id/profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView5"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView5"
+            android:text="00" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Total Fee Collected:" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView4"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Mobile App Commission:" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView5"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Total Profit: " />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

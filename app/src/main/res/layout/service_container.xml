@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FCF5EF"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <ImageButton
+        android:id="@+id/report_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-3dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:elevation="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/report"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_toLeftOf="@id/report_button"
+        android:fontFamily="sans-serif-medium"
+        android:text="date"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#00FCF5EF"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/message"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@id/service_status"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/note" />
+
+        <ImageButton
+            android:id="@+id/call"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/worker_photo"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_button"
+            android:elevation="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/phone_icon" />
+
+        <Button
+            android:id="@+id/service_status"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="#E7CE82"
+            android:backgroundTint="#E7CE82"
+            android:text="Accept?"
+            android:textAllCaps="false"
+            android:textColor="#F8F7F7" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/worker_photo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/client_photo" />
+
+
+        <TextView
+            android:id="@+id/fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customer_address"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/worker_photo"
+            android:fontFamily="@font/baloo_da"
+            android:text="Fee :       "
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/worker_photo"
+            android:fontFamily="@font/baloo_da"
+            android:text="Customer Name"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/total_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/customer_address"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/fee"
+            android:fontFamily="@font/baloo_da"
+            android:text="Total Fee"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/customer_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customer_name"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/worker_photo"
+            android:fontFamily="@font/imprima"
+            android:text="Customer Address"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+

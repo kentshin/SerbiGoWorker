@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msgbox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fcf5ef"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/imprima"
+        android:gravity="center"
+        android:text=" Set up your location address."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#7A7272"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/imprima"
+        android:gravity="center"
+        android:text="Tap on the map below."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#7A7272"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/header3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:drawableBottom="@drawable/pinloc"
+        android:fontFamily="@font/imprima"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#7A7272"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#81D4FA"
+        android:fontFamily="@font/baloo_da"
+        android:text="Okay"
+        android:textColor="#FDFDFD"
+        android:textSize="14sp" />
+
+</RelativeLayout>
